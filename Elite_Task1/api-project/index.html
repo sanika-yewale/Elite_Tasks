@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyVista Weather</title>
+    <meta name="theme-color" content="#111b2e">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-shell">
+    <div class="hero-panel">
+        <div class="hero-copy">
+            <span class="eyebrow">Weather made simple</span>
+            <h1>SkyVista Weather</h1>
+            <p>Search any city or use your location to view the latest weather instantly. Beautiful design, lightning-fast data from a free public API.</p>
+
+            <form id="searchForm" class="search-form">
+                <label for="city">City name</label>
+                <div class="input-row">
+                    <input id="city" name="city" placeholder="e.g. Paris" autocomplete="off" required>
+                    <button type="submit" class="btn-primary">Search</button>
+                </div>
+                <button type="button" id="locationButton" class="btn-secondary">Use my location</button>
+            </form>
+
+            <div class="suggestions">
+                <span>Popular searches:</span>
+                <button type="button" class="suggestion" data-city="New York">New York</button>
+                <button type="button" class="suggestion" data-city="Tokyo">Tokyo</button>
+                <button type="button" class="suggestion" data-city="Sydney">Sydney</button>
+                <button type="button" class="suggestion" data-city="Cape Town">Cape Town</button>
+            </div>
+        </div>
+
+        <div class="hero-preview">
+            <div class="preview-card">
+                <div class="preview-top">
+                    <div>
+                        <span class="preview-label">Current weather</span>
+                        <h2>Ready when you are</h2>
+                    </div>
+                    <div class="preview-badge">API: Open-Meteo</div>
+                </div>
+
+                <div class="weather-result" id="weatherResult">
+                    <p class="message">Enter a city name or use your location to see weather details.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
