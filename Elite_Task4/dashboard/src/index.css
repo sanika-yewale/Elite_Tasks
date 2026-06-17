@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #38bdf8;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #94a3b8;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.productive {
+  color: #22c55e;
+}
+
+.unproductive {
+  color: #ef4444;
+}
+
+.table-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 20px;
+  overflow-x: auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #0ea5e9;
+}
+
+thead th {
+  padding: 15px;
+  color: white;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+tbody tr:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.badge.productive {
+  background: rgba(34,197,94,0.2);
+  color: #22c55e;
+}
+
+.badge.unproductive {
+  background: rgba(239,68,68,0.2);
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td, th {
+  padding: 15px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.website-column {
+  width: 45%;
+  text-align: left;
+}
+
+.category-column {
+  width: 20%;
+}
+
+.time-column {
+  width: 15%;
+}
